@@ -1,5 +1,60 @@
 ### Dart语言入门
 ---
+
+### 需要注意的点
+
+- 插值表达式：${expression}
+
+- 数值型-Number 
+num: int整形 double浮点型,只有int,double两种类型
+
+- 运算符: ~/ 除法不取整  ??= 不为空进行赋值，为空不进行赋值
+
+- ??运算符: ```expr1 ?? expr2``` 第一个表达式为空的话使用第二个表达式的值，不为空直接使用第一个表达式的值
+
+- 方法也是对象，并且有具体类型Function 返回值类型、参数类型都可省略
+
+- 箭头语法： => expr 是{return expr;}缩写 只适用于一个表达式
+
+- 闭包特性
+
+- 类与对象 定义以及文件引入上有不同
+
+- 工厂构造方法
+```
+class Logger {
+  final String name;
+  static final Map<String, Logger> _cache = <String, Logger>{};
+
+  //工厂构造方法
+  factory Logger(String name) {
+    if (_cache.containsKey(name)) {
+      return _cache[name];
+    } else {
+      final logger = Logger._internal(name);
+      _cache[name] = logger;
+      return logger;
+    }
+  }
+
+  Logger._internal(this.name){}
+
+  void log(String msg) {
+    print(msg);
+  }
+}
+```
+- 对象操作符 
+1. 条件成员访问：  ?.
+2. 类型转换: as 
+3. 是否指定类型: is is!
+4. 级联操作： ..
+
+- Dart中的抽象类更像是其他语言中的接口，而Dart中的接口跟其他语言中的接口有点不一样,适用于只是使用已有类的外在行为的情况。
+
+- 可以通过Maxins多继承
+
+
 ### chapter1-概述
 google\全平台(Web、移动端Flutter、脚本或服务端)\面向对象 
 
