@@ -1,7 +1,7 @@
 ### Dart语言入门
 ---
-### 概述
-google/全平台(Web、移动端Flutter、脚本或服务端)/面向对象 
+### chapter1-概述
+google\全平台(Web、移动端Flutter、脚本或服务端)\面向对象 
 
 - 开发环境搭建 
 win:choco install dart-sdk
@@ -14,7 +14,7 @@ mac: brew install dart - -devel
 
 [idea中Setting VM flags failed问题](https://blog.csdn.net/oZhuiMeng123/article/details/90056326)
 
-### 数据类型
+### chapter2-数据类型
 
 #### 变量
 - 使用var声明变量，可富裕不同类型的值
@@ -84,14 +84,14 @@ List(数组)创建：
 
 - Runes、Symbols
 
-#### 运算符
+### chapter3-运算符
 - 算术运算符：加减乘除 + - * / ~/ % 递增递减 ++var var++ --var
 - 关系运算符：运算符 == ！= > < >= <=  判断内容是否相同使用==
 - 逻辑运算符: ! && ||
 - 赋值运算符： 基础运算符 =  ??= 复合运算符 += -= *= /= %= ~/=
 - 条件表达式：三目运算符 condition?expr1:expr2   ??运算符 expr1 ?? expr2 第一个表达式为空的话使用第二个表达式的值，不为空直接使用第一个表达式的值
 
-#### 控制语句
+### chapter4-控制语句
 - 条件语句 if语句 if...else if 语句 if...else if...else 语句
 - 循环语句 for循环 for...in循环
     while语句 while循环 do...while循环
@@ -101,7 +101,7 @@ List(数组)创建：
 非空case必须有一个break
 default处理默认情况
 
-#### 方法
+### chapter5-方法
 - 方法定义 
 返回类型 方法名(参数1，参数2，...){
     方法体...
@@ -145,4 +145,4 @@ default处理默认情况
 闭包定义在其他方法内部
 闭包能够访问外部方法内的局部变量，并持有其状态
 
-#### 面向对象
+### 面向对象
