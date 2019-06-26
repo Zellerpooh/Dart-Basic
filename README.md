@@ -1,10 +1,13 @@
 ### Dart语言入门
 ---
 ### 概述
-google 全平台(Web、移动端Flutter、脚本或服务端) 面向对象 
+google/全平台(Web、移动端Flutter、脚本或服务端)/面向对象 
 
-- 开发环境搭建 win:choco install dart-sdk
+- 开发环境搭建 
+win:choco install dart-sdk
+
 linux:sudo apt-get install dart
+
 mac: brew install dart - -devel
 
 [Get the Dart SDK](https://dart.dev/get-dart)
